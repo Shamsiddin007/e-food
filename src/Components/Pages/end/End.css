@@ -1,0 +1,91 @@
+.coneMAin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gaxla {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 20px;
+}
+
+.cForma {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .coneMAin {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .gaxla, .cForma {
+    width: 48%;
+  }
+}
+.ooobinikl, .zvonite, .rekvizit, .forma {
+  margin-bottom: 20px;
+}
+
+.binone, .telefoni, .piwite {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.binone span, .telefoni span, .piwite span {
+  margin-right: 10px;
+}
+
+.rIkons img {
+  margin-right: 10px;
+}
+
+.forinpu {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name input {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+#email, #vopros {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.zayav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.zayavBtn {
+  background-color: #ffa500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.zayavBtn:hover {
+  background-color: #ff8c00;
+}/*# sourceMappingURL=End.css.map */

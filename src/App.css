@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.cont-cont{
+  max-width: 1450px;
+  margin: auto;
+  padding: 0;
+}

@@ -1,0 +1,42 @@
+.carta-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    padding: 2rem;
+  
+    .carta-child1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.7); 
+      border-radius: 1rem;
+      color: white; 
+  
+      h1 {
+        font-size: 2.5rem; // Adjust as necessary
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+  
+     
+    }
+  
+    .carta-child2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+  
+      video {
+        width: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+      }
+    }
+  }
+  

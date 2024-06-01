@@ -1,0 +1,21 @@
+.mentor-slider-container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+  
+.mentor-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.mentor-slide {
+  width: 22.5%; /* Har bir slide'ning o'lchami 22.5% ga teng bo'lishi kerak */
+  padding: 10px;
+  box-sizing: border-box;
+}

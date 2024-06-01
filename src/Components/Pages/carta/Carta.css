@@ -1,0 +1,35 @@
+.carta-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+.carta-parent .carta-child1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+  color: white;
+}
+.carta-parent .carta-child1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.carta-parent .carta-child1 p {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+.carta-parent .carta-child2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.carta-parent .carta-child2 video {
+  width: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Carta.css.map */

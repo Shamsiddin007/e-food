@@ -1,0 +1,24 @@
+.SliderBox {
+  overflow: hidden; /* Ensure the container doesn't overflow */
+  width: 90%; /* Set the width to 90% */
+  margin: 0 auto; /* Center the container */
+}
+
+.slider-item {
+  padding: 0 15px; /* Adjust the padding to create space between slides */
+  box-sizing: border-box; /* Include padding in the element's total width */
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.slider-item img {
+  width: 120%; /* Rasmlarni kattalshtirish uchun width ni oshirish */
+  height: auto; /* Aspect ratio ni saqlab qolish */
+  border-radius: 10px; /* Border-radius ni rasmlarga qo'yish */
+  transition: transform 0.5s, opacity 0.5s; /* O'zgarishlar animatsiyasini qo'llash */
+}
+
+
+.slider-item.big img {
+  transform: scale(1.2); /* Scale up the image when it's in the center */
+  opacity: 1;
+}

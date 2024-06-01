@@ -1,0 +1,29 @@
+/* History.css */
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 80%;
+    margin: 3.5rem auto;
+  }
+  
+  .image-container, .text-container {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .image-container {
+    transform: translateX(-100%);
+  }
+  
+  .text-container {
+    transform: translateX(100%);
+  }
+  
+  .history-container.visible .image-container,
+  .history-container.visible .text-container {
+    opacity: 1;
+    transform: translateX(0);
+  }
+   
