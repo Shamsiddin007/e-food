@@ -11,7 +11,6 @@ import { Outlet } from 'react-router-dom';
 export default function Cart() {
   const { isEmpty, totalUniqueItems, items, updateItemQuantity, removeItem } = useCart();
 
-  // Umumiy narxni hisoblash
   const calculateTotal = () => {
     return items.reduce((total, item) => total + item.price * item.quantity, 0);
   };
@@ -21,8 +20,8 @@ export default function Cart() {
   if (isEmpty) return (
     <div className="cart-grid">
       <ul className="cart-ul">
-        <h1>Cart (0)</h1>
-        <p>Your cart is empty</p>
+        <h1>Mahsulotlaringiz (0)</h1>
+        <p>Savatingiz boʻsh</p>
       </ul>
       <div className="cart-grid-div">
         <h1 className='cart-grid-div-h1'>Umumiy: 0.00$</h1>
@@ -47,7 +46,7 @@ export default function Cart() {
             <button
               className="item-button1"
               onClick={() => updateItemQuantity(item.id, item.quantity - 1)}
-              disabled={item.quantity === 1} // Disable the button if quantity is 1 to avoid negative values
+              disabled={item.quantity === 1}
             >
               -
             </button>
@@ -57,7 +56,7 @@ export default function Cart() {
             >
               +
             </button>
-            <button className="noselect" onClick={() => removeItem(item.id)}>
+            <button className="noselect sellected" onClick={() => removeItem(item.id)}>
               <span className="text">Uchirish</span>
               <span className="icon">
                 <svg
@@ -75,8 +74,7 @@ export default function Cart() {
       </ul>
       <div className="cart-grid-div">
         <h1 className='cart-grid-div-h1'>Umumiy: {total}$</h1>
-        <h1 className='cart-grid-div-h1'>Dastavka:Tekin</h1>
-        <button className='cart-grid-div-btn'><Link to="yetkazibberish">Junatish</Link></button>
+        <button className='cart-grid-div-btn'>Junatish</button>
       </div>
     </div>
     <Outlet/>

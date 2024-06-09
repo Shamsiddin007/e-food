@@ -1,0 +1,27 @@
+.twitter{
+    transition: .6s all ease;
+    border: 1px solid ;
+    padding: 5px;
+    border-radius: .5rem;
+    &:hover{
+        filter: drop-shadow(2px 3px 15px );
+    }
+}
+.youtube{
+    transition: .6s all ease;
+    border: 1px solid ;
+    padding: 5px;
+    border-radius: .5rem;
+    &:hover{
+        filter: drop-shadow(2px 3px 15px );
+    }
+}
+.facebook{
+    transition: .6s all ease;
+    border: 1px solid ;
+    padding: 5px;
+    border-radius: .5rem;
+    &:hover{
+        filter: drop-shadow(2px 1px 15px );
+    }
+}

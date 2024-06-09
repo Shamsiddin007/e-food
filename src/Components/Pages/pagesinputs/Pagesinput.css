@@ -54,5 +54,39 @@
 .privacy-terms {
   margin-top: 10px;
   font-size: 12px;
-  color: #999;
+}
+
+@media (max-width: 984px) {
+  .waitlist-container {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 600px) {
+  .input-container {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .email-input {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+  .waitlist-button {
+    padding: 1px;
+    font-size: 11px;
+  }
+  .waitlist-form {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .h2in {
+    font-size: 12px;
+  }
+  .privacy-terms {
+    margin-top: 0px;
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=Pagesinput.css.map */

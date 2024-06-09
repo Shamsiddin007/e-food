@@ -44,10 +44,8 @@ function ModalCart() {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      // No errors, proceed with form submission (e.g., call an API)
       console.log("Form submitted", { name, age, email, password });
 
-      // Clear the form fields
       setName("");
       setAge("");
       setEmail("");

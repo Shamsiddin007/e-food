@@ -1,1 +1,45 @@
-/*# sourceMappingURL=Pages.css.map */
+@media only screen and (max-width: 948px) {
+  .parentVid .vedioPages {
+    transform: scale(1.53);
+  }
+}
+@media (max-width: 630px) {
+  .gerb {
+    padding: 0px 0px !important;
+  }
+  .gerb .m {
+    font-size: 30px;
+  }
+  .gerb .off {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .foodtext .wordtext {
+    font-size: 38px;
+  }
+  .dishestext {
+    font-size: 38px !important;
+  }
+  .textads {
+    font-size: 15px;
+  }
+  .btnFree {
+    padding: 5px 5px !important;
+    font-size: 10px;
+    margin: 20px 0 !important;
+  }
+}
+@media (max-width: 480px) {
+  .gerb {
+    padding: 0px 0px !important;
+  }
+  .gerb .m {
+    font-size: 20px;
+  }
+  .gerb .off {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}/*# sourceMappingURL=Pages.css.map */

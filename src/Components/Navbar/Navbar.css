@@ -1,0 +1,58 @@
+
+
+.cart-icon {
+    font-size: 25px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    transform: scale(1.4);
+    &:hover {
+      filter: drop-shadow(2px 3px 15px red);
+    }
+  }
+  
+  :root[data-theme="light"] {
+    --bkgColor: rgba(203, 187, 187, 0.701);
+    --background-color: white;
+    --text-color: black;
+    --navText-hover: #765d5d;
+  }
+  
+  :root[data-theme="luxury"] {
+    --bkgColor: rgba(0, 0, 0, 0.467);
+    --background-color: black;
+    --text-color: #dca54c;
+    --navText-hover: #765d5d;
+  }
+
+  
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .navbar {
+    background-color: var(--bkgColor);
+  }
+  
+  .nav-link {
+    color: var(--text-color);
+    font-size: 1.2rem;
+  }
+  
+  .nav-link:hover {
+    color: var(--navText-hover);
+  }
+  
+
+  .nav-link.active {
+    font-weight: bold;
+    color: #765d5d;
+    text-decoration: underline;
+  }
+  
+  .navBox{
+    
+    background-color: red;
+  }

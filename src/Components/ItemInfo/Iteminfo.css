@@ -1,0 +1,12 @@
+.idCard{
+    background-color: red ;
+    margin: 0px 30px  ;
+}
+
+@media (max-width:438px) {
+    .idCard{
+        margin: auto !important;
+        width: 80% !important;
+        margin-top: 20px !important;
+    }
+}

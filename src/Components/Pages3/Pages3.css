@@ -1,0 +1,10 @@
+@media (max-width: 900px) {
+  .parentBrench {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .parentBrench .branch {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Pages3.css.map */

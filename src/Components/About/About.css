@@ -1,0 +1,96 @@
+.bod {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.App {
+  width: 100%;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.slideImg {
+  width: 400px;
+  height: 300px;
+  border-radius: 0.875rem;
+}
+
+.info-box-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-box-parent .info-box {
+  margin-top: 20px;
+  padding: 20px;
+}
+.info-box-parent .info-box .info-box p {
+  margin: 10px 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-box-parent .info-box .strong {
+  cursor: pointer;
+}
+.info-box-parent .info-box .names {
+  transition: 0.6s all ease;
+  cursor: pointer;
+}
+.info-box-parent .info-box .names:hover {
+  color: goldenrod;
+  filter: drop-shadow(2px 3px 15px yellow);
+}
+.info-box-parent .info-box .insta {
+  transition: 0.6s all ease;
+  cursor: pointer;
+}
+.info-box-parent .info-box .insta:hover {
+  color: red;
+  filter: drop-shadow(2px 3px 15px red);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}/*# sourceMappingURL=About.css.map */

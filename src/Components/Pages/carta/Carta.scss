@@ -3,15 +3,19 @@
     grid-template-columns: 1fr 1fr; 
     gap: 2rem; 
     padding: 2rem;
-  
+
     .carta-child1 {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.7); 
+      // background-color: rgba(0, 0, 0, 0.7); 
       border-radius: 1rem;
-      color: white; 
+      // color: white; 
+      &:hover{
+        transition-duration: 0.5s;
+        filter: drop-shadow(1px 3px 6px black);
+       }
   
       h1 {
         font-size: 2.5rem; // Adjust as necessary
@@ -40,3 +44,37 @@
     }
   }
   
+
+  @media (max-width:984px) {
+   .carta-parent{
+    display: block;
+  }
+  }
+  @media (max-width:630px) {
+    .carta-parent .carta-child1 h1{
+      font-size: 30px;
+      line-height: 32px;
+      margin: 0;
+    }
+    .carta-parent .carta-child1 p{
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 550px) {
+    .btnTeam{
+      padding: 8px 5px !important;
+      width: 90px !important;
+      font-size: 10px;
+    }
+    .carta-parent .carta-child1 h1{
+      padding: 10px 0;
+      font-size: 18px;
+    }
+    .carta-parent .carta-child1 p{
+      font-size: 14px;
+      margin: 0;
+    }
+    .carta-parent{
+      padding: 0;
+    }
+  }

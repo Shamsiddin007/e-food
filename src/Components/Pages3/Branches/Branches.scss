@@ -1,0 +1,44 @@
+/* Add these styles to your CSS file */
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  .branch {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .branch-visible {
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .branch-hidden {
+    animation: slideOut 0.5s forwards;
+  }
+  
+
+  @media (max-width:900px) {
+    .branch{
+      width: 100%      
+    }
+    
+}

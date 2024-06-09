@@ -1,4 +1,3 @@
-/* History.css */
 .history-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -7,7 +6,8 @@
   margin: 3.5rem auto;
 }
 
-.image-container, .text-container {
+.image-container,
+.text-container {
   opacity: 0;
   transform: translateX(0);
   transition: opacity 1s ease-out, transform 1s ease-out;
@@ -25,4 +25,33 @@
 .history-container.visible .text-container {
   opacity: 1;
   transform: translateX(0);
+}
+
+.accordion {
+  display: none;
+}
+
+@media (max-width: 984px) {
+  .visible {
+    display: block;
+  }
+  .history-container.visible .image-container,
+  .history-container.visible .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .visible .imgHistory {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .pHistory {
+    display: none;
+    background-color: red;
+  }
+  .accordion {
+    display: block;
+  }
 }/*# sourceMappingURL=History.css.map */

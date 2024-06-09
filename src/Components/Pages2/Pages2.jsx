@@ -1,16 +1,21 @@
-import act from "react";
+import React from 'react'
+import { CartProvider } from 'react-use-cart';
 import Page from "./page/Page";
+
+
 
 function Pages2() {
   return (
     <>
-    
-      <div className="flex flex-col items-center justify-center">
-        {/* <Menyu/> */}
-        <Page />
-      </div>
+
+      <CartProvider>
+          <Page/>
+      </CartProvider>
+
+
+
     </>
-  );
+  )
 }
 
-export default Pages2;
+export default Pages2

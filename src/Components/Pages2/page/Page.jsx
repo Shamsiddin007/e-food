@@ -1,127 +1,60 @@
 import React from "react";
+import { Fragment, useEffect, useState } from "react";
+
 import { useCart } from "react-use-cart";
+import "./Page.css";
+import { products } from "./../../constants/index";
+import { Link } from "react-router-dom";
+
 
 function Page() {
-  const { addItem } = useCart();  
+  const [datas, setDatas] = useState([]);
 
-  const products = [
-    {
-      id: 1,
-      name: "Gamburger",
-      title: "Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...",
-      price: 25000,
-      img: "/public/img/gamburger.png",
-      quantity: 1,
-    },
-    {
-      id: 2,
-      name: "Chizburger",
-      title: "Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...",
-      price: 28000,
-      img: "/public/img/chizburger.png",
-      quantity: 1,
-    },
-    {
-      id: 3,
-      name: "Bigburger",
-      title: "Burger bulochkasi, tuzlangan bodring, pomidor, 2 ta go'...",
-      price: 40000,
-      img: "/public/img/bigburger.png",
-      quantity: 1,
-    },
-    {
-      id: 4,
-      name: "Hot Dog",
-      title: "Hot-dog bulochkasi, Kanada sosiskasi, tuzlangan bodring...",
-      price: 12000,
-      img: "/public/img/hotdog.png",
-      quantity: 1,
-    },
-    {
-      id: 5,
-      name: "Chiz dog",
-      title: "Hot-dog bulochkasi, kanada sosiskasi, tuzlangan bodri...",
-      price: 15000,
-      img: "/public/img/chizdog.png",
-      quantity: 1,
-    },
-    {
-      id: 6,
-      name: "Longer",
-      title: "Hot-dog bulochka,ketchup, mayonez, strips 1 dona, tuzl...",
-      price: 15000,
-      img: "/public/img/longer.png",
-      quantity: 1,
-    },
-    {
-      id: 7,
-      name: "German Donar",
-      title: "Non, ranch sousi, qizil karam salati, Doner go'shti, ay...",
-      price: 30000,
-      img: "/public/img/germandonar.png",
-      quantity: 1,
-    },
-    {
-      id: 8,
-      name: "Shaurma",
-      title: "Donor bulochka, mol go'shti-donar, yangi bodring, pomid...",
-      price: 28000,
-      img: "/public/img/shaurma.png",
-      quantity: 1,
-    },
-    {
-      id: 9,
-      name: "Moxito",
-      title: "",
-      price: 15000,
-      img: "/public/img/moxito.png",
-      quantity: 1,
-    },
-    {
-      id: 10,
-      name: "Sharbat Dena",
-      title: "",
-      price: 5000,
-      img: "/public/img/sharbatdena.png",
-      quantity: 1,
-    },
-    {
-      id: 11,
-      name: "Fuse tea",
-      title: "",
-      price: 10000,
-      img: "/public/img/fusetea.png",
-      quantity: 1,
-    },
-    {
-      id: 12,
-      name: "Bonaqua",
-      title: "",
-      price: 5000,
-      img: "/public/img/suv.png",
-      quantity: 1,
-    },
-  ];
-  
+  const { addItem, } = useCart();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const request = await fetch("/db.json");
+      const resData = await request.json();
+      console.log(resData.articles);
+      setDatas(resData.articles);
+    };
+    fetchData();
+  }, []);
 
   return (
-    <div className="borderparent grid grid-cols-3 gap-8">
+    <>
+    <div className="borderparent">
       {products.map((p) => (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl" key={p.id}>
-          <figure className="overflow-hidden">
-            <img className="hover:scale-105 pagesImg cursor-pointer" src={p.img} alt={p.name} />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">{p.name}</h2>
-            <p>{p.title}</p>
-            <div className="card-actions justify-between items-center">
-              <h2>{p.price}$</h2>
-              <button className="btn btn-primary" onClick={() => addItem(p)}>Buy Now</button>
-            </div>
+        <div className="aksiyagerBorder" key={p.id} >
+          <Link to={`/iteminfo/${p.id}`}><img className="AksiyagerImg" src={p.img} alt={p.name} /></Link>
+       
+          <div className="aksiyaBorder-child">
+            <h3 className="aksiyachild-h3">{p.name}</h3>
+            <section className="borderFlex">
+              <h4 className="borderFlex-h3">{p.price}$</h4>
+              <button className="CartBtn" onClick={() => addItem(p)}>
+                <span className="IconContainer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 576 512"
+                    fill="rgb(17, 17, 17)"
+                    class="cart"
+                  >
+                    <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path>
+                  </svg>
+                </span>
+                <p class="text">Add to Cart</p>
+              </button>
+            </section>
           </div>
+         
         </div>
       ))}
     </div>
+    
+    </>
   );
 }
 
