@@ -28,7 +28,7 @@ function CollapsibleExample() {
   return (
     <>
       <header>
-        <Navbar collapseOnSelect expand="lg" className=" fixed-top">
+        <Navbar collapseOnSelect expand="lg" className="">
           <Container>
             <Navbar.Brand as={Link} to="/">
               <img className="logo" src={logo} alt="" />
