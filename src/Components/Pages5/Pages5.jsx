@@ -13,7 +13,7 @@ function Pages() {
 
   return (
     <div className="contact_div ">
-    
+    <div>
         <div className="rounded-2xl w-96 bg-base-100 shadow-xl qrPar">
           <figure>
             <img src={qrKey} alt="QR key" />
@@ -30,6 +30,9 @@ function Pages() {
 
         <h1 className="text-2xl pt-6 h1">A single contact center</h1>
         <p className="pt-3">+998712005400</p>
+    </div>
+    <div>
+    </div>
    
 {/* 
       <ToastContainer

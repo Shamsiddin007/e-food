@@ -14,7 +14,7 @@
 :root[data-theme="light"] {
   --bkgColor: rgba(203, 187, 187, 0.701);
   --background-color: white;
-  --text-color: black;
+  --text-colors: black;
   --navText-hover: #765d5d;
   --voiceColor:white;
   --bkgAcor:rgb(124, 112, 112);
@@ -27,6 +27,7 @@
   --navText-hover: #765d5d;
   --voiceColor:#dca54c;
   --bkgAcor:rgb(30, 22, 22);
+  --text-colors: white;
 }
 
 
