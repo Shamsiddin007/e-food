@@ -39,12 +39,12 @@ export default function Cart() {
     <>
     <div className="cart-grid">
       <ul className="cart-ul">
-        <h1>Mahsulotlaringiz({totalUniqueItems})</h1>
+        <h1>Your products({totalUniqueItems})</h1>
         {items.map((item) => (
           <li key={item.id}>
             {item.quantity} x <img className="cart-img" src={item.img} alt="" />{' '}
             <div>
-              <p>Narxi : {(item.price * item.quantity).toFixed(2)}$</p>
+              <p>Price : {(item.price * item.quantity).toFixed(2)}$</p>
               <h3>{item.name}</h3>
             </div>
             <button
