@@ -31,6 +31,11 @@
   display: none;
 }
 
+.ack {
+  background-color: var(--bkgAcor) !important;
+  color: white !important;
+}
+
 @media (max-width: 984px) {
   .visible {
     display: block;

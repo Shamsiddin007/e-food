@@ -8,5 +8,70 @@
     } 
 }
 
+// .VedParent{
+//     min-height: 100vh;
+//     overflow: hidden;
+// }
 
 
+//   .section {
+//     position: relative;
+//     width: 100%;
+//     height: 100vh;
+//   }
+  
+//   .section--green {
+//     background-color: green;
+//   }
+//   .section--blue {
+//     width: 100%;
+//     height: 100vh;
+//   }
+
+//   .square{
+//     position: relative;
+//     z-index: 1000;
+//   }
+  
+
+
+// .imgs{
+//     display: block;
+//     width: 400px;
+//     height: 400px;
+//     position: absolute;
+//     top: calc(50% - 200px);
+//     left: calc(50% - 200px);
+// }
+
+
+
+
+
+.VedParent {
+  position: relative;
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoVid {
+  width: 60%;
+  border-radius: 1.5rem;
+}
+
+
+@media (max-width:1459px) {
+  .VedParent{
+    width: 100%;
+  }
+}
+
+@media (max-width:705px) {
+  .VedParent{
+    min-height: 0 !important;
+    margin: 80px 0;
+  }
+}

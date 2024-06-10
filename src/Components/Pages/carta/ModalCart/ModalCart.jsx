@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import ToastEr from "/src/Toast/ErorToast"
+import ToastSucces from '/src/Toast/SuccesToast';
+
+
 
 function ModalCart() {
   const [name, setName] = useState("");
@@ -6,6 +10,8 @@ function ModalCart() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
+  const [notification, setNotification] = useState(null);
+
 
   const validateEmail = (email) => {
     return /\S+@\S+\.\S+/.test(email);
@@ -17,44 +23,58 @@ function ModalCart() {
 
     if (!name) {
       newErrors.name = "Name is required.";
+      setNotification(<ToastEr />);
     } else if (name.length < 3) {
       newErrors.name = "Name must be at least 3 characters long.";
+      setNotification(<ToastEr />);
     }
 
     if (!age) {
       newErrors.age = "Age is required.";
+      setNotification(<ToastEr />);
     } else if (!/^\d+$/.test(age)) {
       newErrors.age = "Age must be a number.";
-    } else if (parseInt(age, 10) <= 0) {
-      newErrors.age = "Age must be a positive number.";
+      setNotification(<ToastEr />);
+    } else if (parseInt(age, 10) <= 17) {
+      newErrors.age = "You are under 18 years old.";
+      setNotification(<ToastEr />);
     }
 
     if (!email) {
       newErrors.email = "Email is required.";
+      setNotification(<ToastEr />);
     } else if (!validateEmail(email)) {
-      newErrors.email = "Email is invalid.";
+      newErrors.email = "No postal address found.";
+      setNotification(<ToastEr />);
     }
 
     if (!password) {
       newErrors.password = "Password is required.";
-    } else if (password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters long.";
+      setNotification(<ToastEr />);
+    } else if (password.length < 8) {
+      newErrors.password = "Password must not be less than 8 characters";
+      setNotification(<ToastEr />);
     }
 
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
       console.log("Form submitted", { name, age, email, password });
-
+      setNotification(<ToastSucces />);
       setName("");
       setAge("");
       setEmail("");
       setPassword("");
     }
+    
+    setTimeout(() => {
+      setNotification(null);
+    }, 5000)
   };
 
   return (
     <>
+    {notification}
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box">
           <form method="dialog">
@@ -96,7 +116,7 @@ function ModalCart() {
             <input
               type="text"
               className="grow"
-              placeholder="daisy@site.com"
+              placeholder="daisy@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />

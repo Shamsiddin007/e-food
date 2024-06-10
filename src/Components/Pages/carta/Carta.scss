@@ -9,16 +9,16 @@
       flex-direction: column;
       justify-content: center;
       padding: 2rem;
-      // background-color: rgba(0, 0, 0, 0.7); 
+      background-color: var(--background-color); 
       border-radius: 1rem;
-      // color: white; 
+      transition: .9s all;
       &:hover{
         transition-duration: 0.5s;
         filter: drop-shadow(1px 3px 6px black);
        }
   
       h1 {
-        font-size: 2.5rem; // Adjust as necessary
+        font-size: 2.5rem; 
         margin-bottom: 1rem;
       }
   
@@ -76,5 +76,10 @@
     }
     .carta-parent{
       padding: 0;
+    }
+  }
+  @media (max-width:710px) {
+    .carta-parent .carta-child1:hover{
+      background-color: rgba(255, 0, 0, 0) ;
     }
   }

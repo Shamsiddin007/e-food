@@ -17,6 +17,7 @@
     --background-color: white;
     --text-color: black;
     --navText-hover: #765d5d;
+    --spanColor:black;
   }
   
   :root[data-theme="luxury"] {
@@ -24,6 +25,7 @@
     --background-color: black;
     --text-color: #dca54c;
     --navText-hover: #765d5d;
+    --spanColor:white;
   }
 
   
@@ -55,4 +57,15 @@
   .navBox{
     
     background-color: red;
+  }
+
+
+  .navbar-toggler-icon{
+    color:  var(--spanColor) !important;
+    
+    
+  }
+
+  .navbar-toggler{
+    border: 1px solid var(--spanColor);
   }

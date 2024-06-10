@@ -1,0 +1,103 @@
+.btnModals{
+    position: fixed !important;
+    bottom: 120px;
+    right: 15px;
+    z-index: 1000;
+    width: 50px;
+    cursor: pointer;
+}
+
+.opens{
+    width: 20% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2D3748;
+}
+.savClose{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.Closebtn{
+    border: 1px solid black;
+    &:hover{
+        background-color: red;
+    }
+
+}
+.savebtn{
+    border: 1px solid black;
+    position: relative;
+    bottom: 0;
+    &:hover{
+        background-color: rgb(26, 152, 19);
+    }
+
+}
+.btnX{
+    position: absolute;
+    right: 0;
+    padding: 20px 10px;
+    color: #ffffff;
+}
+
+.textCreate{
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    padding: 15px 20px;
+    color:#ffffff;
+}
+
+
+.inModalleft{
+    margin: 50px 0;
+}
+
+
+
+
+
+@media (max-width:1400px) {
+    .opens{
+        width: 30% !important;
+    }
+    .textCreate{
+        font-size: 15px;
+    }
+}
+@media (max-width:800px) {
+    .opens{
+        width: 35% !important;
+    }
+
+}
+@media (max-width:665px) {
+    .opens{
+        width: 40% !important;
+    }
+    .textCreate{
+        font-size: 13px;
+    }
+
+}
+@media (max-width:600px) {
+    .opens{
+        width: 40% !important;
+    }
+
+}
+@media (max-width:527px) {
+    .opens{
+        width: 50% !important;
+    }
+
+}
+@media (max-width:400px) {
+    .opens{
+        width: 60% !important;
+    }
+
+}

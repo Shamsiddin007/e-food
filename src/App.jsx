@@ -19,7 +19,10 @@ import Pages3 from "./Components/Pages3/Pages3";
 import Iteminfo from "./Components/ItemInfo/Iteminfo";
 import { products } from "./Components/constants";
 import Loader from "./Loader/Loader";
-import "./Scrolls.css"
+import Vois from "./Components/Vocal/Vocal.jsx"
+import Messenger from "./Components/Messenger/Messenger.jsx"
+import "./alfa.css"
+
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -92,9 +95,11 @@ function App() {
   ) : (
     <div className="cont-cont">
       <RouterProvider router={routes} />
-      <Footer />
       {/* <ScrollAuto/> */}
+      <Vois/>
+      <Footer />
       <Top />
+      <Messenger/>
     </div>
   );
 }

@@ -7,3 +7,21 @@
   margin: auto;
   padding: 0;
 }
+
+:root[data-theme="light"] {
+  --bkgColor: rgba(203, 187, 187, 0.701);
+  --background-color: white;
+  --text-color: black;
+  --navText-hover: #765d5d;
+  --voiceColor:white;
+  --bkgAcor:rgb(124, 112, 112);
+}
+
+:root[data-theme="luxury"] {
+  --bkgColor: rgba(0, 0, 0, 0.467);
+  --background-color: black;
+  --text-color: #dca54c;
+  --navText-hover: #765d5d;
+  --voiceColor:#dca54c;
+  --bkgAcor:rgb(30, 22, 22);
+}

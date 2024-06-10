@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { Link, NavLink } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
+import Empty from "/public/icon/empty.png"
 
 
 export default function Cart() {
@@ -20,11 +21,14 @@ export default function Cart() {
   if (isEmpty) return (
     <div className="cart-grid">
       <ul className="cart-ul">
-        <h1>Mahsulotlaringiz (0)</h1>
-        <p>Savatingiz boʻsh</p>
+        <h1>Your products (0)</h1>
+          <p >Your cart is empty </p>
+        <section>
+          <img className='empty' src={Empty} alt="" />
+        </section>
       </ul>
       <div className="cart-grid-div">
-        <h1 className='cart-grid-div-h1'>Umumiy: 0.00$</h1>
+        <h1 className='cart-grid-div-h1'>General: 0.00$</h1>
       </div>
     </div>
   );

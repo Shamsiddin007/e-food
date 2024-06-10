@@ -48,7 +48,7 @@ function Pages() {
             <video autoPlay muted preload="1" loop src={Sertficat}></video>
           </div>
           <div className="accordionText w-12/12">
-            <Accordion>
+            <Accordion className="ack">
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1-content"
@@ -71,14 +71,14 @@ function Pages() {
               </AccordionDetails>
             </Accordion>
             <Accordion>
-              <AccordionSummary
+              <AccordionSummary  className="ack" 
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
                 About the company
-              </AccordionSummary>
-              <AccordionDetails>
+              </AccordionSummary >
+              <AccordionDetails  className="ack">
                 At Max Way, the products are kept very fresh and according to ISO
                 standards. The dishes are not only tasty, but also easily
                 digestible and suitable for both quick meals and full meals. At

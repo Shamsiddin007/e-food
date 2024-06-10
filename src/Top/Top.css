@@ -68,4 +68,16 @@
   100% {
     transform: rotate(1turn);
   }
+}
+@media (max-width: 700px) {
+  .back-to-top button {
+    width: 35px;
+    height: 35px;
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 73px;
+    right: 25px;
+    z-index: 1000;
+  }
 }/*# sourceMappingURL=Top.css.map */

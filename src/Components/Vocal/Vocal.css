@@ -1,0 +1,72 @@
+.mic-button {
+  position: fixed;
+  bottom: 100px;
+  right: 60px;
+  z-index: 1000;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:disabled {
+  background-color: rgb(128, 128, 128);
+  cursor: not-allowed;
+}
+
+.in {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 10%;
+  font-size: 16px;
+  position: fixed;
+  z-index: 1000;
+  width: 80px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.borderParent {
+  padding: 20px 20px;
+}
+.borderParent:hover {
+  box-shadow: 1px 1px 5px red;
+}
+
+.sonVoice {
+  color: var(--voiceColor);
+}
+
+.soundBorder {
+  border: 1px solid red;
+  padding: 10px 20px;
+  width: 50%;
+  border-radius: 1.2rem;
+}
+.soundBorder:hover {
+  filter: drop-shadow(2px 3px 15px red);
+}
+
+@media (max-width: 1070px) {
+  .soundBorder {
+    width: 100%;
+  }
+}
+@media (max-width: 468px) {
+  .sonVoice {
+    font-size: 15px !important;
+  }
+}/*# sourceMappingURL=Vocal.css.map */

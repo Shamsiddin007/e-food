@@ -89,4 +89,9 @@
     margin-top: 0px;
     font-size: 10px;
   }
+}
+@media (max-width: 1200px) {
+  .waitlist-container {
+    padding: 0;
+  }
 }/*# sourceMappingURL=Pagesinput.css.map */

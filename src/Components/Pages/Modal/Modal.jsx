@@ -33,12 +33,15 @@ const MyModal = () => {
     } else if (username.length < 3) {
       setNotification(<ToastSucces />);
       newErrors.username = "Username must be at least 3 characters long.";
+      setNotification(<ToastEr />);
     }
   
     if (!password) {
       newErrors.password = "Enter your password.";
+      setNotification(<ToastEr />);
     } else if (password.length < 8) {
       newErrors.password = "Password must be at least 8  characters long.";
+      setNotification(<ToastEr />);
     }
   
     setErrors(newErrors);
@@ -52,10 +55,9 @@ const MyModal = () => {
       setErrors({});
     }
   
-    // Clear notification after form submission
     setTimeout(() => {
       setNotification(null);
-    }, 5000); // Adjust the timeout as needed
+    }, 5000); 
   };
   
 

@@ -2,4 +2,29 @@
   .VedParent .video {
     width: 100%;
   }
+}
+.VedParent {
+  position: relative;
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoVid {
+  width: 60%;
+  border-radius: 1.5rem;
+}
+
+@media (max-width: 1459px) {
+  .VedParent {
+    width: 100%;
+  }
+}
+@media (max-width: 705px) {
+  .VedParent {
+    min-height: 0 !important;
+    margin: 80px 0;
+  }
 }/*# sourceMappingURL=Vedio.css.map */

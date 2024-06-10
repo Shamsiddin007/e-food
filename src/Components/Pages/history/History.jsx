@@ -58,7 +58,7 @@ function History() {
         </div>
       </div>
       <div className=" accordion w-10/12">
-        <Accordion>
+        <Accordion className="ack">
           <AccordionSummary
 
             expandIcon={<ExpandMoreIcon />}

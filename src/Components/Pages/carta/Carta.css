@@ -9,7 +9,9 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
+  background-color: var(--background-color);
   border-radius: 1rem;
+  transition: 0.9s all;
 }
 .carta-parent .carta-child1:hover {
   transition-duration: 0.5s;
@@ -67,5 +69,10 @@
   }
   .carta-parent {
     padding: 0;
+  }
+}
+@media (max-width: 710px) {
+  .carta-parent .carta-child1:hover {
+    background-color: rgba(255, 0, 0, 0);
   }
 }/*# sourceMappingURL=Carta.css.map */

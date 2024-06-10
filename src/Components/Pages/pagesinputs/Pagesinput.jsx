@@ -4,7 +4,7 @@ import './Pagesinput.css'; // Import your custom CSS for styling
 const EmailWaitlist = () => {
   return (
     <>
-    <div className="waitlist-container">
+    <div className="waitlist-container ">
       <h2 className='h2in'>Join our waitlist for early access to new features</h2>
       <form className="waitlist-form">
         <div className="input-container">

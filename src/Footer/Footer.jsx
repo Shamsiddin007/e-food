@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
    
-      <footer className="footer footer-center p-10 text-base-content rounded">
+      <footer className="footer footer-center p-10 text-base-content rounded footers">
         <nav className="grid grid-flow-col gap-4">
           <a href="http://localhost:5173/menyu" className="link link-hover">Menyu</a>
           <a href="http://localhost:5173/branches" className="link link-hover">Branches</a>

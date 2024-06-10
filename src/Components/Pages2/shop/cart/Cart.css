@@ -181,6 +181,10 @@
   -o-transform: scale(1.1);
 }
 
+.empty {
+  width: 200px;
+}
+
 @media (max-width: 1031px) {
   .cart-grid {
     flex-direction: column;

@@ -25,3 +25,8 @@
         filter: drop-shadow(2px 1px 15px );
     }
 }
+
+.footers{
+    position: relative;
+    z-index: 1000;
+}
