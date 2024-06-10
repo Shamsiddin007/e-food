@@ -3,10 +3,13 @@
   padding: 0;
 }
 .cont-cont{
+  overflow: hidden;
   max-width: 1450px;
   margin: auto;
   padding: 0;
 }
+
+
 
 :root[data-theme="light"] {
   --bkgColor: rgba(203, 187, 187, 0.701);
@@ -24,4 +27,22 @@
   --navText-hover: #765d5d;
   --voiceColor:#dca54c;
   --bkgAcor:rgb(30, 22, 22);
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+  background: linear-gradient(var(--footer__back));
+;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgb(180,148,58);
+  background: radial-gradient(circle, rgb(173, 111, 84) 0%, rgb(190, 88, 88) 50%, rgb(187, 102, 50) 100%);
 }

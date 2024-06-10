@@ -28,20 +28,25 @@ function CollapsibleExample() {
   return (
     <>
       <header>
+      <LoadingBar
+        color='#f11946'
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
         <Navbar collapseOnSelect expand="lg" className="">
           <Container>
-            <Navbar.Brand as={Link} to="/">
+            <Navbar.Brand as={Link} to="/"  onClick={() => setProgress(100)}>
               <img className="logo" src={logo} alt="" />
             </Navbar.Brand>
             <div className="box d-flex gap-md-3 gap-sm-2">
-                <Nav.Link className="d-inline d-lg-none">
+                <Nav.Link className="d-inline d-lg-none "  onClick={() => setProgress(100)}>
                   <div className="cart">
                     <Link to="shop">
                       <span className="cart-icon">🛒</span>
                     </Link>
                   </div>
                 </Nav.Link>
-                <Nav.Link href="#memes" className="d-inline d-lg-none">
+                <Nav.Link href="#memes" className="d-inline d-lg-none"  onClick={() => setProgress(100)}>
                   <label className="swap swap-rotate">
                     <input
                       onChange={handleToggle}
@@ -71,28 +76,28 @@ function CollapsibleExample() {
             </div>
             <Navbar.Collapse id="responsive-navbar-nav ">
               <Nav className="me-auto">
-                <Nav.Link as={Link} to="menyu">
+                <Nav.Link as={Link} to="menyu"  onClick={() => setProgress(100)}>
                   Menyu
                 </Nav.Link>
-                <Nav.Link as={Link} to="branches">
+                <Nav.Link as={Link} to="branches"  onClick={() => setProgress(100)}>
                   Branches
                 </Nav.Link>
-                <Nav.Link as={Link} to="about">
+                <Nav.Link as={Link} to="about"  onClick={() => setProgress(100)}>
                   About
                 </Nav.Link>
-                <Nav.Link as={Link} to="connection">
+                <Nav.Link as={Link} to="connection"  onClick={() => setProgress(100)}>
                   Connection
                 </Nav.Link>
               </Nav>
               <Nav className="d-flex align-items-center">
-                <Nav.Link className="d-none d-lg-block">
+                <Nav.Link className="d-none d-lg-block"   onClick={() => setProgress(100)}>
                   <div className="cart">
                     <Link to="shop">
                       <span className="cart-icon">🛒</span>
                     </Link>
                   </div>
                 </Nav.Link>
-                <Nav.Link href="#memes" className="d-none d-lg-block">
+                <Nav.Link href="#memes" className="d-none d-lg-block"  onClick={() => setProgress(100)}>
                   <label className="swap swap-rotate">
                     <input
                       onChange={handleToggle}

@@ -7,10 +7,10 @@ function Footer() {
    
       <footer className="footer footer-center p-10 text-base-content rounded footers">
         <nav className="grid grid-flow-col gap-4">
-          <a href="http://localhost:5173/menyu" className="link link-hover">Menyu</a>
-          <a href="http://localhost:5173/branches" className="link link-hover">Branches</a>
-          <a href="http://localhost:5173/about" className="link link-hover">About</a>
-          <a href="http://localhost:5173/connection" className="link link-hover">Connection</a>
+          <a href="/menyu" className="link link-hover">Menyu</a>
+          <a href="/branches" className="link link-hover">Branches</a>
+          <a href="/about" className="link link-hover">About</a>
+          <a href="/connection" className="link link-hover">Connection</a>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">

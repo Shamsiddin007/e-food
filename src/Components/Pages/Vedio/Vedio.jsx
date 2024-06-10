@@ -23,12 +23,12 @@ function Vedio() {
 
     tl.to(".videoVid", {
       scale: 1.5,
-      rotationZ: 360,
+      rotationZ: 0,
       duration: 2,
     })
     .to(".videoVid", {
       scale: 1,
-      rotationY: -360,
+      rotationY: 0,
       duration: 2,
     });
   }, []);

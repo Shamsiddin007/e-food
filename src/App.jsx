@@ -22,6 +22,7 @@ import Loader from "./Loader/Loader";
 import Vois from "./Components/Vocal/Vocal.jsx"
 import Messenger from "./Components/Messenger/Messenger.jsx"
 import "./alfa.css"
+import Notfound from "./Components/NotFound/Notfound.jsx";
 
 
 function App() {
@@ -83,6 +84,8 @@ function App() {
         <Route path="connection" element={<Pages5/>} />
         <Route path="shop" element={<Shop/>} />
         <Route path="iteminfo/:id" element={<Iteminfo products={products}/>}/>
+        <Route path="*" element={<Notfound/>} />
+
       </Route>
     )
   );
